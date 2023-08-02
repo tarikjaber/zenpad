@@ -69,7 +69,7 @@
 
     /* Style the selected text */
     .textarea::selection {
-        background-color: #1c82a4; /* Set the selected text background color to match the scrollbar on hover */
+        background-color: #176B87; /* Set the selected text background color to match the scrollbar on hover */
         color: #DAFFFB; /* Set the selected text color */
     }
 
