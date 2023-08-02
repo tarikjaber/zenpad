@@ -29,7 +29,7 @@
         border: none;
         margin: 0;
         width: calc(100% - 40px); /* Adjust width to account for the scrollbar */
-        max-width: 500px; /* Respect a maximum width of 500px */
+        max-width: 700px; /* Respect a maximum width of 500px */
         font-size: 20px;
         padding: 20px;
         /* height: calc(100vh - 40px); */
