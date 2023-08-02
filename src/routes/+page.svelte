@@ -15,6 +15,16 @@
             textarea.value = storedText || "";
             textarea.focus();
         }
+
+        // Event listener to clear the textarea when "Ctrl + U" is pressed
+        document.addEventListener("keydown", (event) => {
+            if (event.ctrlKey && event.key === "u") {
+                event.preventDefault();
+                if (textarea) {
+                    textarea.value = "";
+                }
+            }
+        });
     });
 </script>
 
