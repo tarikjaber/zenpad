@@ -47,7 +47,7 @@
         resize: none;
         outline: none;
         background-color: #001C30;
-        color: #fff;
+        color: #DAFFFB;
         height: 100%;
 
         /* Curved selections */
