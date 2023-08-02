@@ -51,7 +51,7 @@
         height: 100%;
 
         /* Curved selections */
-        caret-color: #176B87; /* Set the caret color to match the scrollbar */
+        caret-color: #DAFFFB; /* Set the caret color to match the scrollbar */
     }
 
     /* Style the scrollbar */
