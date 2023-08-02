@@ -7,6 +7,20 @@
         localStorage.setItem("text", newValue);
     }
 
+    // Handle Tab key press
+    function handleTabPress(event: KeyboardEvent) {
+        if (event.key === "Tab") {
+            event.preventDefault();
+            const textarea = event.target as HTMLTextAreaElement;
+            const { selectionStart, selectionEnd } = textarea;
+            const value = textarea.value;
+            const newValue = value.substring(0, selectionStart) + "    " + value.substring(selectionEnd);
+            textarea.value = newValue;
+            // Set the cursor position after the inserted spaces
+            textarea.selectionStart = textarea.selectionEnd = selectionStart + 4;
+        }
+    }
+
     onMount(() => {
         const storedText = localStorage.getItem("text");
 
@@ -25,6 +39,9 @@
                 }
             }
         });
+
+        // Event listener to handle Tab key press
+        textarea?.addEventListener("keydown", handleTabPress);
     });
 </script>
 
