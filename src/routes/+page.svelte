@@ -101,7 +101,7 @@
 
     :global(body) {
         margin: 0;
-        background-color: var(--background-color);
+        background-color: #001C30;
         color: var(--text-color);
     }
 </style>
